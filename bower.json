@@ -1,0 +1,25 @@
+{
+  "name": "angular-password-check",
+  "version": "0.1.2",
+  "authors": [
+    "Administrator <support@e154.ru>"
+  ],
+  "description": "angular password check directive",
+  "keywords": [
+    "angular",
+    "password"
+  ],
+  "main": [
+    "password-check.css",
+    "password-check.js"
+  ],
+  "license": "MIT",
+  "homepage": "e154.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
