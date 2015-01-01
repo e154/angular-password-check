@@ -33,7 +33,7 @@
         init: function(options) {
 
             // имя пользователя
-            Pc.username = (undefined !== options.nickname)? $(options.nickname) : undefined;
+            Pc.username = $(options.nickname);
             // пароль
             Pc.passwordInput = $(options.passwordInput);
             if(!Pc.passwordInput.length) return;
