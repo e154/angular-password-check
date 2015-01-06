@@ -162,7 +162,7 @@
             Pc.strengthRecommendation.html(msg);
             Pc.indicator.css({width: strength + '%'});
         },
-        // отвечает за подсказку при введении проверки пароля
+        // отвечает за подсказку при проверки пароля
         PcMatch: function() {
 
             // если поле пустое, скрыть подсказки и ждать
@@ -204,18 +204,28 @@
 
             return {
                 restrict: 'E',
+                scope: {
+                    nickname:"@",
+                    passwordInput:"@",
+                    confirmInput:"@",
+                    passwordRecommendation:"@",
+                    passwordConfirmRecommendation:"@",
+                    strengthRecommendation:"@",
+                    submitButton:"@",
+                    autoDisable:"="
+                },
                 link: function ($scope, element, attrs) {
 
                     var p = Pc;
                     var options = {
-                        "nickname": attrs.nickname,
-                        "passwordInput": attrs.passwordInput,
-                        "confirmInput": attrs.confirmInput,
-                        "passwordRecommendation": attrs.passwordRecommendation,
-                        "passwordConfirmRecommendation": attrs.passwordConfirmRecommendation,
-                        "strengthRecommendation": attrs.strengthRecommendation,
-                        "submitButton": attrs.submitButton,
-                        "autoDisable": attrs.autoDisable
+                        "nickname": $scope.nickname,
+                        "passwordInput": $scope.passwordInput,
+                        "confirmInput": $scope.confirmInput,
+                        "passwordRecommendation": $scope.passwordRecommendation,
+                        "passwordConfirmRecommendation": $scope.passwordConfirmRecommendation,
+                        "strengthRecommendation": $scope.strengthRecommendation,
+                        "submitButton": $scope.submitButton,
+                        "autoDisable": $scope.autoDisable
                     };
 
                     p.init(options);
