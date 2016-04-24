@@ -1,6 +1,8 @@
 Angular password check
 ======================
 
+<img src="screenshot22.png" alt="Coffee Break icon paused" width="100%">
+
 ##Usage
 
 ```
@@ -50,3 +52,7 @@ Angular password check
     </div>
 
 ```
+
+#### LICENSE
+
+Angular-password-check is licensed under the [MIT License (MIT)](https://github.com/e154/angular-password-check/blob/master/LICENSE).
